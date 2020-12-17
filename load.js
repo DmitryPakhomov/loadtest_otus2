@@ -13,7 +13,7 @@ export let options = {
     scenarios: {
         my_web_test: {
             executor: "constant-arrival-rate",
-            rate: 80,
+            rate: 60,
             timeUnit: "1m", // 90 iterations per minute, i.e. 1.5 RPS
             duration: "10s",
             preAllocatedVUs: 10, // the size of the VU (i.e. worker) pool for this scenario
